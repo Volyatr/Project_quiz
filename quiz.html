@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/quiz.css" />
+  </head>
+  <body>
+    <!-- вывод результата теста -->
+    <!-- <div class="quiz-modal-window">
+      <div class="quiz-result">
+        <h1>
+          Сюды добавить переменную, изменяющую текст в зависимости от результата
+          теста
+        </h1>
+        <p>
+          Верных ответов <span id="correct-answer"></span> из
+          <span id="total-number"></span> возможных
+        </p>
+        <button class="try-again">Пройти тест еще раз</button>
+      </div>
+    </div> -->
+    <!-- блок с вопросом и варантами ответа-->
+    <div class="quiz-main-conteiner">
+      <h1 class="questions-number">
+        Вопрос <span id="number-of-question"></span> из
+        <span id="total-question-number"></span>
+      </h1>
+
+      <div id="question"></div>
+      <div class="options">
+        <div data-id="1" class="option option1"></div>
+        <div data-id="2" class="option option2"></div>
+        <div data-id="3" class="option option3"></div>
+        <div data-id="4" class="option option4"></div>
+      </div>
+
+      <div class="button">
+        <button id="move-foward">К следующему вопросу</button>
+      </div>
+      <div id="answer-tracker"></div>
+    </div>
+
+    <script src="/quiz.js"></script>
+  </body>
+</html>
